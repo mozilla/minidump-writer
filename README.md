@@ -12,6 +12,8 @@
 
 This project is currently being very actively brought up from nothing, and is really ultimately many separate client implementations for different platforms.
 
+This is a friendly fork with small changes required for vendoring the crate in Firefox. It will go away as soon as we will be able to vendor the upstream crate.
+
 ## Usage / Examples
 
 The primary use case of this crate is for creating a minidump for an **external** process (ie a process other than the one that writes the minidump) as writing minidumps from within a crashing process is inherently unreliable. That being said, there are scenarios where creating a minidump can be useful outside of a crash scenario thus each supported platforms has a way to generate a minidump for a local process as well.
